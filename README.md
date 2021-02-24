@@ -1,6 +1,6 @@
 # MyReads Project
 
-This is a book tracking application for the final assessment project for Udacity's React Fundamentals course.
+This is a book tracking application for the final assessment project for Udacity's React Fundamentals course under the react developer track powered by the [African App Launchpad "ALL"](http://techleaders.eg/aal/) scholarship.
 
 ## Quick Start
 
