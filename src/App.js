@@ -66,7 +66,9 @@ class App extends Component {
 	bookUpdate = (book, shelf) => {
 		book.shelf = shelf;
 		this.setState((currentState) => {
-			const books = [ ...currentState.books.filter((b) => b.id !== book.id), book ];
+			// const books = [ ...currentState.books.filter((b) => b.id !== book.id), book ];
+			const otherBooks = currentState.books.filter((b) => b.id !== book.id);
+			const books = (book.shelf === 'none')? otherBooks: [ ...otherBooks, book ];
 			return { books };
 		});
 		BooksAPI.update(book, shelf);

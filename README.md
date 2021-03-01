@@ -20,29 +20,40 @@ The search page also has a link to `/` "the root URL", which leads back to the m
 
 To get started the right away:
 
+* Download & Install [Node.js](https://nodejs.org/en/)
+* Clone This Repo `git clone https://github.com/ahMx3d/my-reads-app.git`
 * install all project dependencies with `npm install`
 * start the development server with `npm start`
 
-## What You're Getting
+## Project Structure
 
 ```bash
-├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
-├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
+├── README.md
+├── SEARCH_TERMS.md
+├── package.json
 ├── public
-│   ├── favicon.ico # React Icon, You may change if you wish.
-│   └── index.html # DO NOT MODIFY
+│   ├── favicon.ico
+│   └── index.html
 └── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── BooksAPI.js
+    ├── components
+    │   ├── Book.js
+    │   ├── BookAuthors.js
+    │   ├── BookList.js
+    │   ├── BookSearch.js
+    │   ├── BookShelf.js
+    │   ├── Header.js
+    │   ├── OpenSearch.js
+    │   ├── ShelfChanger.js
+    ├── icons
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
+    ├── index.css
+    └── index.js
 ```
 
 ## Backend Server
@@ -95,3 +106,8 @@ The backend API uses a fixed set of cached search results and is limited to a pa
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+## Frontend Used Packages
+
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [Prop Types](reactjs.org/docs/typechecking-with-proptypes.html)
